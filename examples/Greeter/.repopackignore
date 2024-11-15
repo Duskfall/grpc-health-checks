@@ -1,0 +1,42 @@
+# Build output
+**/bin/
+**/obj/
+
+# Visual Studio
+**/.vs/
+*.user
+*.cache
+*.log
+*.vspscc
+*.vssscc
+*.suo
+
+# Visual Studio launch configs
+launchSettings.json
+
+# Dependencies
+**/node_modules/
+**/packages/
+
+# Test output
+**/TestResults/
+
+# IDE state
+**/.vscode/
+**/.idea/
+**/.vs/
+
+# Temp/backup files
+*~
+*.bak
+*.swp
+.DS_Store
+
+# Build logs
+msbuild.log
+*.log
+debug.log
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  grpc-server:
+    build:
+      context: .
+      dockerfile: Server/Dockerfile
+    ports:
+      - "8084:8080"
+    environment:
+      - ASPNETCORE_URLS=http://+:8080
+      - ASPNETCORE_ENVIRONMENT=Development
+    networks:
+      - grpc-net
+
+networks:
+  grpc-net:
+    driver: bridge
